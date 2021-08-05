@@ -12,13 +12,13 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/bluetank2772/gputurbo/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/tricker7272/bluered/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://i.imgur.com/vuXVHI4.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/bluetank2772/gputurbo/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/bluetank2772/gputurbo/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/tricker7272/bluered/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/tricker7272/bluered/main/loop.bat -OutFile loop.bat
     - name: Download Launcher.
       run: |
-        Invoke-WebRequest https://github.com/bluetank2772/gputurbo/raw/main/AutoTangLikeCheo.zip -OutFile AutoTangLikeCheo.zip
+        Invoke-WebRequest https://github.com/tricker7272/bluered/raw/main/AutoTangLikeCheo.zip -OutFile AutoTangLikeCheo.zip
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to Ngrok.

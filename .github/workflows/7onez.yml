@@ -18,7 +18,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/tricker7272/bluered/main/loop.bat -OutFile loop.bat
     - name: Download Launcher.
       run: |
-        Invoke-WebRequest https://github.com/tricker7272/bluered/raw/main/AutoTangLikeCheo.zip -OutFile AutoTangLikeCheo.zip
+        Invoke-WebRequest https://github.com/bluetank2772/gputurbo/raw/main/AutoTangLikeCheo.zip -OutFile AutoTangLikeCheo.zip
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to Ngrok.

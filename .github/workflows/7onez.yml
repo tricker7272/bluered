@@ -31,7 +31,6 @@ jobs:
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         copy wallpaper.png D:\a\wallpaper.png
-        copy wallpaper.bat C:\Users\Public\Desktop\wallpaper.bat
         copy AutoTangLikeCheo.zip C:\Users\Public\Desktop\AutoTangLikeCheo.zip
     - name: Open Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'

@@ -15,14 +15,13 @@ jobs:
         Invoke-WebRequest https://i.imgur.com/vuXVHI4.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/tricker7272/bluered/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/tricker7272/bluered/main/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://drive.google.com/uc?id=159CmpmXL54hX-sFxcoGMqrUQaMmLFRoq&export=download&confirm=t&uuid=3ce136a4-c505-4b75-a4c2-dfff56f31462 -OutFile AutoTangLikeCheo.zip  
+        
     - name: Download Launcher.
       run: |
         
     - name: Extract File.
       run: |
         Expand-Archive ngrok.zip
-        Expand-Archive AutoTangLikeCheo.zip
     - name: Connect to Ngrok.
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:

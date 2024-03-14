@@ -22,9 +22,10 @@ REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation /v Model /
 REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation /v SupportURL /t REG_SZ /d "https://github.com/7onez/AdityaRDP/issues" /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarSmallIcons /t REG_DWORD /d 1 /f
 
-powershell -Command "(New-Object System.Net.WebClient).DownloadFile('https://drive.usercontent.google.com/download?id=159CmpmXL54hX-sFxcoGMqrUQaMmLFRoq&export=download&confirm=t&uuid=3ce136a4-c505-4b75-a4c2-dfff56f31462', 'C:\Users\runneradmin\Desktop\AutoTangLikeCheo.zip');
-Expand-Archive -Path 'C:\Users\runneradmin\Desktop\AutoTangLikeCheo.zip' -DestinationPath 'C:\Users\runneradmin\Desktop';
-cd 'C:\Users\runneradmin\Desktop\AutoTangLikeCheo';
-Start-Process -FilePath 'AutoTangLikeCheo.exe'"
+curl -o "C:\Users\Administrator\Desktop\AutoTangLikeCheo.zip" "https://drive.google.com/uc?id=159CmpmXL54hX-sFxcoGMqrUQaMmLFRoq&export=download&confirm=t&uuid=3ce136a4-c505-4b75-a4c2-dfff56f31462"
+cd 'C:\Users\\Administrator\Desktop';
+expand AutoTangLikeCheo.zip -F:* .
+cd 'C:\Users\\Administrator\Desktop\AutoTangLikeCheo'
+Start 'AutoTangLikeCheo.exe'
 
 

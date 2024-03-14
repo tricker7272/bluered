@@ -22,7 +22,7 @@ REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation /v Model /
 REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation /v SupportURL /t REG_SZ /d "https://github.com/7onez/AdityaRDP/issues" /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarSmallIcons /t REG_DWORD /d 1 /f
 
-cd 'C:\Users\Administrator\Desktop\AutoTangLikeCheo'
-start 'AutoTangLikeCheo.exe'
+cd 'C:\Users\Administrator\Desktop'
+start 'tlc.cmd'
 
 

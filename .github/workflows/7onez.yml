@@ -1,11 +1,12 @@
 name: 7onez
 
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 
 jobs:
   build:
 
     runs-on: windows-latest
+    timeout-minutes: 360
 
     steps:
     - name: Download.

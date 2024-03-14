@@ -1,1 +1,2 @@
 powershell -Command "(New-Object System.Net.WebClient).DownloadFile('https://drive.usercontent.google.com/download?id=159CmpmXL54hX-sFxcoGMqrUQaMmLFRoq&export=download&confirm=t&uuid=3ce136a4-c505-4b75-a4c2-dfff56f31462', 'C:\Users\Administrator\Desktop\AutoTangLikeCheo.zip'); Expand-Archive -Path 'C:\Users\Administrator\Desktop\AutoTangLikeCheo.zip' -DestinationPath 'C:\Users\Administrator\Desktop'; cd 'C:\Users\Administrator\Desktop\AutoTangLikeCheo'; Start-Process -FilePath 'AutoTangLikeCheo.exe'"
+exit

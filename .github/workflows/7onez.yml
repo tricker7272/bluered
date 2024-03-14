@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-2012r2
+    runs-on: windows-2016
     timeout-minutes: 360
 
     steps:
